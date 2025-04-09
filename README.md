@@ -1,124 +1,136 @@
-<div>
-  <h1>Wanderlust</h1>
-  <h2>The Ultimate Travel Blog 🌍✈️ for You </h2>
-</div>
 
-![Preview Image](https://github.com/krishnaacharyaa/wanderlust/assets/116620586/17ba9da6-225f-481d-87c0-5d5a010a9538)
+# DevSecOps Project
 
-<hr>
+## Table of contents
 
-<div>
-  <h2>🔗 Important Links</h2>
-</div>
+- [Introduction](#introduction)
+- [Tools Used](#tools-used)
+- [Pipeline](#pipeline)
+- [Azure Infrastructure](#azure-infrastructure)
+- [Detailed Workflow](#detailed-workflow)
+- [Security approaches](#security-approaches)
+- [Project Demo](#demo)
+- [Screenshots](#screenshots)
+- [Build Outputs](#build-outputs)
 
-<table border="1">
-  <tr>
-      <td><img src="https://github.com/Meetjain1/wanderlust/assets/133582566/5ca6c472-5c73-41b2-a2df-389cc3e14881.png" alt="Discord Logo" width="50"></td>
-      <td><a href="https://discord.gg/FEKasAdCrG"> Join our project's Discord Channel here </a></td>
-  </tr>
-  <tr>
-      <td><img src="https://github.com/Meetjain1/wanderlust/assets/133582566/ffda08c0-3c7a-46b0-b7ac-6bc374184ec7.png" alt="Figma Logo" width="50"></td>
-      <td><a href="https://www.figma.com/file/zqNcWGGKBo5Q2TwwVgR6G5/WanderLust--A-Travel-Blog-App?type=design&node-id=0%3A1&mode=design&t=c4oCG8N1Fjf7pxTt-1"> Find our project's Figma links here</a></td>
-  </tr>
-  <tr>
-      <td><img src="https://github.com/krishnaacharyaa/wanderlust/assets/133582566/47d71dd6-0390-479e-9d4e-3f077ef1a987.png" alt="YouTube Logo" width="50"></td>
-      <td><a href="https://youtu.be/ANfC1u_N_A0?feature=shared"> Find our Collaboration Video with TrainwithShubham here </a></td>
-  </tr>
-</table>
+## Introduction
 
-<hr>
+An end-to-end DevSecOps pipeline built on Azure using Terraform.
 
-<div>
-  <h2><img src="https://github.com/Meetjain1/wanderlust/assets/133582566/4a07b161-b8d6-4803-804a-3b0db699023e" width="35" height="35"> Goal of this project </h2>
-</div>
+## Tools Used
 
-At its core, this project embodies two important aims:
+| <a href="https://azure.microsoft.com"><img src="https://github.com/vital987/vital987/blob/master/assets/azure.svg" width=32 height=32></a><br><b>Azure</b>  | <a href="https://terraform.io"><img src="https://github.com/vital987/vital987/blob/master/assets/terraformio.svg" width=32 height=32><a><br></b>Terraform</b> |                 <a href="https://linux.org/"><img src="https://github.com/vital987/vital987/blob/master/assets/linux-icon.svg" width=32 height=32></a><br><b>Linux</b>                 |
+| :---------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|       <a href="https://git-scm.com/"><img src="https://github.com/vital987/vital987/blob/master/assets/git.svg" width=32 height=32></a><br><b>Git</b>       |     <a href="https://github.com/"><img src="https://github.com/vital987/vital987/blob/master/assets/github.svg" width=32 height=32></a><br><b>GitHub</b>      |                 <a href="https://jenkins.io/"><img src="https://github.com/vital987/vital987/blob/master/assets/jenkins.svg" width=32 height=32></a><br><b>Jenkins</b>                 |
+| <a href="https://www.vaultproject.io/"><img src="https://github.com/vital987/vital987/blob/master/assets/vault.svg" width=32 height=32></a><br><b>Vault</b> |       <a href="https://trivy.dev/"><img src="https://github.com/vital987/vital987/blob/master/assets/trivy.svg" width=32 height=32></a><br><b>Trivy</b>       | <a href="https://www.sonarsource.com/products/sonarqube/"><img src="https://github.com/vital987/vital987/blob/master/assets/sonarqube.svg" width=32 height=32></a><br><b>SonarQube</b> |
+|  <a href="https://maven.apache.org/"><img src="https://github.com/vital987/vital987/blob/master/assets/maven.svg" width=32 height=32></a><br><b>Maven</b>   |       <a href="https://junit.org/"><img src="https://github.com/vital987/vital987/blob/master/assets/junit5.png" width=32 height=32><a><br><b>JUnit</b>       |             <a href="https://www.selenium.dev/"><img src="https://github.com/vital987/vital987/blob/master/assets/selenium.svg" width=32 height=32></a><br><b>Selenium</b>             |
+| <a href="https://www.ansible.com/"><img src="https://github.com/vital987/vital987/blob/master/assets/ansible.svg" width=32 height=32></a><br><b>Ansible</b> |     <a href="https://docker.com/"><img src="https://github.com/vital987/vital987/blob/master/assets/docker.svg" width=32 height=32></a><br><b>Docker</b>      |            <a href="https://kubernetes.io/"><img src="https://github.com/vital987/vital987/blob/master/assets/kubernetes.svg" width=32 height=32></a><br><b>Kubernetes</b>             |
 
-1. **Start Your Open Source Journey**: It's aimed to kickstart your open-source journey. Here, you'll learn the basics of Git and get a solid grip on the MERN stack and I strongly believe that learning and building should go hand in hand.
-2. **React Mastery**: Once you've got the basics down, a whole new adventure begins of mastering React. This project covers everything, from simple form validation to advanced performance enhancements. And I've planned much more cool stuff to add in the near future if the project hits more number of contributors.
+## Pipeline
 
-_We want you to get the most out of this project—it's all about learning, contributing, and growing in the open-source community._
-<hr>
+![process_diagram](https://raw.githubusercontent.com/vital987/devsecops_project/master/docsAssets/devops_project.png)
 
-<div>
-  <h2><img src="https://github.com/Meetjain1/wanderlust/assets/133582566/1ee5934a-27be-4502-a7bf-e6a8c78fe5a3" width="35" height="35"> Features</h2>
-</div>
+## Azure Infrastructure
 
-- **Featured Posts :** Highlight top travel stories and destinations on the homepage to showcase the best content and inspire readers with exciting travel experiences.
-- **User-Friendly Interface:** Navigate effortlessly through captivating travel content with our intuitive design.
-- **Discover By topic categories:** **Discover by Topic Categories**: Explore diverse travel experiences categorized by travel, nature, city, Adventure and Beaches..
-  
-<hr>
+![azure_diagram](https://raw.githubusercontent.com/vital987/devsecops_project/master/docsAssets/azure_infra.png)
 
-<div>
-  <h2><img src="https://github.com/Meetjain1/wanderlust/assets/133582566/90f3930e-5a12-4a4e-8ac9-0dc7d5396adb" width="35" height="35"> Ready to Contribute?</h2>
-</div>
+## Detailed workflow
 
-Kindly go through [CONTRIBUTING.md](https://github.com/krishnaacharyaa/wanderlust/blob/main/.github/CONTRIBUTING.md) to understand everything from setup to contributing guidelines.
+- The coder commits and pushes the source code to the GitHub repository.
+- GitHub webhook pushes to Jenkins.
+- Vault integration with Jenkins enables Jenkins to fetch credentials from Vault.
+- Jenkins triggers the build.
+    - **Declarative Checkout:** Jenkins fetches the [source code](https://github.com/vital987/cicdTestApp) from the GitHub repo and checks it out to the specified branch.
+    - **Scan web app:** Scans the fetched source code with SonarQube scanner and reports the analysis to the SonarQube host.
+    - **Build web app:** Builds the [source code](https://github.com/vital987/cicdTestApp) with Maven and outputs a jar file (war+tomcat server).
+    - **Test web app:** Tests the built application with given JUnit test cases and stores the reports with the help of the SureFire plugin.
+    - **Push artifact:** Pushes the built jar file to the Ansible server via SCP.
+    - **Run the playbook**: Run the Ansible playbook on the Ansible server.
+    - **Clean workspace:** Delete compiled/built/packaged components.
+    - **Send status:** Sends build status to GitHub and build status + test summary to Slack (the failure in any stage will also send notification).
+- Ansible executes the playbook on the Ansible server.
+    - **Docker login:** Login to Docker with registry credentials (DockerHub in this case) to push images.
+    - **Build image:** Build the image by copying the JAR file (the artifact sent by Jenkins) into the image.
+    - **Tag & push tagged image:** Tag the built image with the current Jenkins build number and push to the registry (for update deployments).
+    - **Tag & push latest image:** Re-tag the above image with the "latest" tag and push it to DockerHub (for initial deployments).
+    - **Docker logout:** Log out of the DockerHub registry.
+    - **Trivy vulnerability scan:** Scan Docker images for vulnerabilities and secrets and upload reports to blob storage.
+    - **Deployment check:** check for the existence of deployment on a Kubernetes cluster via the master node.
+        - Create the deployment with the latest image if it doesn't exist.
+        - Update the existing deployment with the tagged image if it exists.
+- **Notify the deployment status to Slack** (failure at any stage will also notify Slack).
+- The deployment can be accessed publicly via a static public IP attached to the Nginx ingress controller of the cluster.
+- One can further attach a domain name to the above IP.
 
-If you would like to contribute to the project, please follow our contribution guidelines.
+## Security approaches
 
-<hr>
-<!-- Open Source Programs -->
-  <div>
-    <h2><img src="https://github.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/blob/master/Emojis/Hand%20gestures/Flexed%20Biceps.png?raw=true" width="35" height="35" > Open Source Programs</h2>
-  </div>
+- All the virtual machines are separated into their own subnets. The interconnection between subnets is blocked by NSG security rules.
+- Other than the NSG rules mentioned above, each VM has its own NSG inbound rules, allowing only the ports used by the respective softwares.
+- All the virtual machines are secured with SSH public key authentication, which will help prevent brute-force attacks. The ssh connections between required virtual machines are made using Terraform during infrastructure provisioning. The keys are optionally stored locally to access the virtual machines manually.
+- The credentials of all the tools are stored securely in the Hashicorp Vault. The credentials are accessed only by Jenkins and distributed to the rest of the tools via pipeline interpolation, reason was to secure the Vault AppRole credentials. Cause, according to my perspective, Jenkins provides the most secure credential storage among all the other tools (except vault) used in the pipeline to store Vault access (AppRole) credentials.
 
-  <table border="1" cellpadding="10">
-        <tr>
-            <td rowspan="2">
-                <img src="https://github.com/Meetjain1/wanderlust/assets/133582566/21b2bc42-bdd5-487a-a083-1b262c2f6d9b" alt="GSSOC Logo" width="100" height="55">
-            </td>
-            <td>
-                <strong>GSSOC 2024</strong>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                This project is part of GirlScript Summer of Code. We warmly welcome contributions from the community to help elevate Wanderlust.
-            </td>
-        </tr>
-    </table>
+<p align=center>
+    <img src="https://raw.githubusercontent.com/vital987/devsecops_project/master/docsAssets/secret_mgmt.png" height=300px>
+</p>
+ 
+## [Demo](https://youtu.be/F2fakudbC8o)
+Demonstration of the pipeline workflow. Click the above hyperlink to view the demo.
 
-<hr>
-
-<!-- Code of conduct -->
-<div>
-<h2><img src = "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" width="35" height="35"> Code of Conduct</h2>
-</div>
-
-Please note that this project is released with a [Contributor Code of Conduct](.github/CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
-
-<hr>
-
-<!-- License -->
-<div>
-<h2><img src = "https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Page%20with%20Curl.png" width="35" height="35"> License</h2>
-</div>
-
-This project is licensed under the [MIT License](./LICENSE).
-
-<hr>
+## Screenshots
 
 <div>
-  <h2><img src="https://github.com/Meetjain1/wanderlust/assets/133582566/af38ec84-7387-4af7-af85-8f408a4654e9" width="35" height="35"> Show Your Support</h2>
+
+### Jenkins
+ <details>
+ <summary>Stage View</summary>
+ <img src="https://raw.githubusercontent.com/vital987/devsecops_project/master/docsAssets/jenkins_stage_view.png" align="center"><br><br>
+ </details>
+ <details>
+ <summary>System Config</summary>
+ <img src="https://raw.githubusercontent.com/vital987/devsecops_project/master/docsAssets/jenkins_config.png" align="center"><br><br>
+ </details>
+ <details>
+ <summary>Pipeline Config</summary>
+ <img src="https://raw.githubusercontent.com/vital987/devsecops_project/master/docsAssets/jenkins_pipeline_config.png" align="center"><br><br>
+ </details>
+ <details>
+ <summary>Credentials</summary>
+ <img src="https://raw.githubusercontent.com/vital987/devsecops_project/master/docsAssets/jenkins_credentials.png" align="center"><br><br>
+ </details>
+
+### SonarQube
+ <details>
+ <summary>Dashboard</summary>
+ <img src="https://raw.githubusercontent.com/vital987/devsecops_project/master/docsAssets/sonarqube_analysis.png" align="center"><br><br>
+ </details>
+
+### Slack
+ <details>
+ <summary>Channel messages</summary>
+ <img src="https://raw.githubusercontent.com/vital987/devsecops_project/master/docsAssets/slack_status.png" align="center"><br><br>
+ </details>
+
+### DockerHub
+ <details>
+ <summary>Repository dashboard</summary>
+ <img src="https://raw.githubusercontent.com/vital987/devsecops_project/master/docsAssets/dockerhub_repo.png" align="center"><br><br>
+ </details>
+ 
+### Kubernetes
+ <details>
+ <summary>Deployment</summary>
+ <img src="https://raw.githubusercontent.com/vital987/devsecops_project/master/docsAssets/k8s_depl.png" align="center"><br><br>
+ </details>
 </div>
 
-If you find this project interesting and inspiring, please consider showing your support by starring it on GitHub! Your star goes a long way in helping me reach more developers and encourages me to keep enhancing the project.
+## Build Outputs
 
-Feel free to get in touch with me for any further queries or support, happy to help :)
+- Terraform
+    - [Plan](https://raw.githubusercontent.com/vital987/devsecops_project/master/outputs/tf_plan.txt)
+- Jenkins
+    - [Create deployment](https://raw.githubusercontent.com/vital987/devsecops_project/master/outputs/jenkins_create_build.txt)
+    - [Update deployment](https://raw.githubusercontent.com/vital987/devsecops_project/master/outputs/jenkins_update_build.txt)
+- Vault
+    - [Credentials](https://raw.githubusercontent.com/vital987/devsecops_project/master/outputs/vault_credentials.txt)
 
-<hr>
-
- <!-- Cotributors -->
-<div>
-  <h2><img src="https://github.com/Meetjain1/wanderlust/assets/133582566/20610b38-b287-4bf0-8f28-932b9c76163d" width="40" height="40"> Contributors</h2>
-</div>
-
-We extend our heartfelt gratitude for your invaluable contribution to our project! Your efforts play a pivotal role in elevating Wanderlust to greater heights. 😊
-
-<div>
-<a href="https://github.com/krishnaacharyaa/wanderlust/graphs/contributors">
-  <img width="90%" src="https://contrib.rocks/image?repo=krishnaacharyaa/wanderlust" />
-</a>
-</div>
+---
